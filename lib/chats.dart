@@ -8,7 +8,7 @@ class Chats extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 7, 99, 34),
         foregroundColor: const Color.fromARGB(255, 255, 255, 255),
         title: Text("Whattsapp"),
-        actions: [Icon(Icons.qr_code), SizedBox(width: 20), Icon(Icons.camera),SizedBox(width: 20),Icon(Icons.more_vert)],
+        actions: [Icon(Icons.qr_code), SizedBox(width: 20), Icon(Icons.camera_alt_outlined),SizedBox(width: 20),Icon(Icons.more_vert)],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},

@@ -19,9 +19,19 @@ class Calls extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.call),
+        backgroundColor: const Color.fromARGB(255, 16, 116, 3),
+        foregroundColor: const Color.fromARGB(255, 0, 0, 0),
       ),
       body: ListView(
         children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 20),
+            child: Text(
+              "Favourite",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            ),
+          ),
+          SizedBox(height: 25,),
           ListTile(
             title: Text("Add Favourite"),
 
@@ -30,11 +40,37 @@ class Calls extends StatelessWidget {
               child: Icon(Icons.favorite, color: Colors.black),
             ),
           ),
+          SizedBox(height: 25,),
           Padding(
             padding: const EdgeInsets.only(left: 20),
             child: Text(
               "Recent",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            ),
+          ),
+          SizedBox(height: 25,),
+          ListTile(
+            trailing: Icon(Icons.call),
+            title: Text("Calling"),
+            subtitle: Text("Last seen"),
+            leading: CircleAvatar(
+              backgroundImage: AssetImage("assets/3541871.png"),
+            ),
+          ),
+             ListTile(
+            trailing: Icon(Icons.call),
+            title: Text("Calling2"),
+            subtitle: Text("Last seen"),
+            leading: CircleAvatar(
+              backgroundImage: AssetImage("assets/3541871.png"),
+            ),
+          ),
+             ListTile(
+            trailing: Icon(Icons.call),
+            title: Text("Calling3"),
+            subtitle: Text("Last seen"),
+            leading: CircleAvatar(
+              backgroundImage: AssetImage("assets/3541871.png"),
             ),
           ),
         ],
